@@ -4,6 +4,7 @@ import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import layout from '../pages/layout/index';
 import about from '../pages/about/about';
+import formValidator from '../pages/formValidator/form';
 
 
 class RouteConfig extends Component {
@@ -13,6 +14,7 @@ class RouteConfig extends Component {
                 <Switch>
                     <Route path="/" exact component={layout}></Route>
                     <Route path="/about" component={about}></Route>
+                    <Route path="/formValidator" component={formValidator}></Route>
                 </Switch>
             </HashRouter>
         )
