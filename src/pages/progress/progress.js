@@ -20,7 +20,7 @@ class Progress extends Component {
 
     switch (value) {
       case "Prev":
-        if (stepValue < 1) {
+        if (stepValue === 1) {
           this.setState({
             currentValue: 1,
           });
@@ -33,7 +33,7 @@ class Progress extends Component {
       case "Next":
         if (stepValue === this.props.stepList.length) {
           this.setState({
-            currentValue: 4,
+            currentValue: this.props.stepList.length,
           });
         } else {
           this.setState({
@@ -80,7 +80,7 @@ class Progress extends Component {
           <input
             type="button"
             className={`button ${
-              this.state.currentValue === 1 ? "disable" : ""
+              this.state.currentValue === 1  ? "disable" : ""
             }`}
             value="Prev"
           />
