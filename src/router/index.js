@@ -6,6 +6,7 @@ import layout from '../pages/layout/index';
 import about from '../pages/about/about';
 import formValidator from '../pages/formValidator/form';
 import progressStep from '../pages/progress/progress';
+import mobileTab from '../pages/mobileTab/mobileTab';
 
 
 class RouteConfig extends Component {
@@ -17,6 +18,8 @@ class RouteConfig extends Component {
                     <Route path="/about" component={about}></Route>
                     <Route path="/formValidator" component={formValidator}></Route>
                     <Route path="/progressStep" component={progressStep}></Route>
+                    <Route path="/mobileTab" component={mobileTab}></Route>
+                    
                 </Switch>
             </HashRouter>
         )

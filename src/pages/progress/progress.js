@@ -26,7 +26,7 @@ class Progress extends Component {
           });
         } else {
           this.setState({
-            currentValue: --this.state.currentValue,
+            currentValue: --stepValue,
           });
         }
         break;
@@ -37,7 +37,7 @@ class Progress extends Component {
           });
         } else {
           this.setState({
-            currentValue: ++this.state.currentValue,
+            currentValue: ++stepValue,
           });
         }
         break;
@@ -61,8 +61,7 @@ class Progress extends Component {
           {this.props.stepList.map((item, index) => {
             return (
               <div
-                className={`
-                            circle ${
+                className={`circle ${
                               index == 0
                                 ? "active"
                                 : this.state.currentValue > index
@@ -84,7 +83,6 @@ class Progress extends Component {
             }`}
             value="Prev"
           />
-
           <input
             type="button"
             className={`button ${

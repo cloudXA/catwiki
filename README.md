@@ -38,7 +38,8 @@ export default App;
 `box-sizing`的属性一：`content-box`是默认值。设置的`width`仅仅加在content内容区，而`border`和`padding`是额外加在内容区域之外的。属性二：`border-box`,设置的width是包含了`border`和`padding`。
 - `input`默认`display`为`inline-block`,可以设置宽度、高度。
 ### 4.2 step进度条
-通过控制一个值currentValue，达到控制step圆圈、stepbar的效果。支持引入新的props（array）的方式改变step个数。使用类似v-for的map && 组件元素级别的三元控制达到样式切换、更改的效果。尤其牛笔的是，默认bar效果实现是由```css
+通过控制一个值currentValue，达到控制step圆圈、stepbar的效果。支持引入新的props（array）的方式改变step个数。使用类似v-for的map && 组件元素级别的三元控制达到样式切换、更改的效果。尤其牛笔的是，默认bar效果实现是由
+```css
     .progress-container::before {
         content: "";
         background: #e0e0e0;
@@ -49,10 +50,21 @@ export default App;
         width: 100%;
         z-index: -1;
     }
-```实现的。
+```
+实现的。
+
 居中处理的有：
   1. flex justify-content 水平沿着主轴居中
   2. positon absolute top 50% transform: translateY(-50%)
 
+### 4.3 引入阿里云 icon 图标
+* 在[阿里图标](https://www.iconfont.cn/)通过购物车方式引入到项目中去，然后选择`font class`的方式将下载代码。下载后的代码有可以放置在本项目的`style/iconfont`目录下，通过在单个`.js`组件以`import '../../style/iconfont/iconfont.css';`方式局部引入`css`文件。
+* 在全局`index.js`组件以`import './style/iconfont/iconfont.css'`方式全局引入。
+* 在`public`中的`index.html`以`link`的方式引入css。
+总体思路是引入css文件即可。
 
+在组件中注意使用的方式为
+```javascript
+<i className="iconfont icon-circleradioselectedsolid"></i>
+```
 

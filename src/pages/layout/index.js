@@ -10,6 +10,7 @@ class Layout extends Component {
                 <Link to="/about">关于项目</Link>
                 <Link to="/formValidator">表单校验</Link>
                 <Link to="/progressStep">进度step</Link>
+                <Link to="/mobileTab">移动端tab导航</Link>
             </div>
         )
     }
