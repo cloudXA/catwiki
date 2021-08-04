@@ -45,18 +45,14 @@ class Progress extends Component {
   }
 
   render() {
+    const progressBar = ((this.state.currentValue - 1) / (this.props.stepList.length - 1)) * 100 + "%";
+  
     return (
       <div className="container">
         <div className="progress-container">
           <div
             className="progress"
-            style={{
-              width:
-                ((this.state.currentValue - 1) /
-                  (this.props.stepList.length - 1)) *
-                  100 +
-                "%",
-            }}
+            style={{ width: progressBar }}
           ></div>
           {this.props.stepList.map((item, index) => {
             return (

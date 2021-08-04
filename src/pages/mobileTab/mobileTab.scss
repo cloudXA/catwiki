@@ -1,14 +1,22 @@
 .nav-container {
     display: flex;
-    flex: 1;
     width: 100%;
     justify-content: space-between;
     box-sizing: border-box;
     padding: 0 10px;
 
-    div.nav-item {
+    div.column-icon {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
+
+    a {
+        text-decoration: none;
+        flex: 1;
+    }
+    
+
+   
 }
