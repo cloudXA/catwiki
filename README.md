@@ -67,4 +67,23 @@ export default App;
 ```javascript
 <i className="iconfont icon-circleradioselectedsolid"></i>
 ```
+### 4.4 mobile icon toggle布局+react router操作
+以前写移动端的布局，使用父组件使用(但是存在端部布局分布不均匀问题)
+```
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
+}
+```
+现在写移动端的布局(能够实现布局完整的适应性)flex:1做了什么🤔
+```
+.parent {
+  display: flex;
+
+  .chidrent {
+    flex: 1;
+  }
+}
+```
