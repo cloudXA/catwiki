@@ -70,10 +70,10 @@ Mobiletab.defaultProps = {
             path: '/progressStep'
         },
         {
-            icon: 'icon-shoucang1',
-            content: '收藏',
-            path: '/mobileTab'
-        }
+            icon: 'icon-gouwuche',
+            content: '购物车',
+            path: '/content'
+        },
     ],
     arrange: 'column' // row 图标与字体一行 column图标与字体上下一行
 }

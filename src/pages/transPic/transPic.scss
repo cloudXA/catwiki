@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+.picContainer {
+    display: flex;
+
+
+    .picContent {
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 80vh;
+        border-radius: 50px;
+        margin: 10px;
+        flex: 0.5;
+        -webkit-transition: all 700ms ease-in;
+        
+       
+    }
+    .picContent.active {
+        flex: 5;
+    }
+
+    
+}
