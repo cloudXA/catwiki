@@ -4,8 +4,6 @@
 
 .picContainer {
     display: flex;
-
-
     .picContent {
         width: 200px;
         height: 200px;
@@ -16,13 +14,30 @@
         border-radius: 50px;
         margin: 10px;
         flex: 0.5;
-        -webkit-transition: all 700ms ease-in;
+        -webkit-transition: flex 700ms ease-in;
+
+        h3 {
+            opacity: 0;
+        }
         
        
     }
     .picContent.active {
         flex: 5;
+        position: relative;
+
+        h3 {
+            position: absolute;
+            color: #fff;
+            font-size: 24px;
+            bottom: 20px;
+            left: 20px;
+            transition: opacity 0.3s ease-in 0.4s;
+            opacity: 1;
+        }
     }
+
+    
 
     
 }

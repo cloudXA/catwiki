@@ -40,7 +40,7 @@ class TransPic extends Component {
                                                         }`}
                                 key={index}
                             >
-
+                                <h3>{item.content}</h3>
                             </div>
                         )
                     })
@@ -57,19 +57,24 @@ TransPic.propTypes = {
 TransPic.defaultProps = {
     picList: [
         {
-            url: bg1
+            url: bg1,
+            content: '探索世界'
         },
         {
-            url: bg2
+            url: bg2,
+            content: '野外森林'
         },
         {
-            url: bg3
+            url: bg3,
+            content: '夏日海岸'
         },
         {
-            url: bg4
+            url: bg4,
+            content: '冬日城市'
         },
         {
-            url: bg5
+            url: bg5,
+            content: '雪山彩云'
         },
     ]
 }
