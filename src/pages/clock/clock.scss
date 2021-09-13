@@ -1,4 +1,9 @@
 
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+
 .clockContainer {
     position: relative;
     width: 200px;
@@ -41,6 +46,6 @@
         position: absolute;
         bottom: 0;
         transform: translate(100%, 150%);
-        }
+    }
     
 }
