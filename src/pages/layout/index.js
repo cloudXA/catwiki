@@ -13,6 +13,7 @@ class Layout extends Component {
                 <Link to="/mobileTab">移动端tab导航</Link>
                 <Link to="/content">卡片内容</Link>
                 <Link to="/transpic">转换的图片</Link>
+                <Link to="/clock">可视化时针</Link>
             </div>
         )
     }

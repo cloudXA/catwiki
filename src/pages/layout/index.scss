@@ -1,3 +1,7 @@
 .home {
     color: green;
+    display: flex;
+    a {
+        flex: 1;
+    }
 }

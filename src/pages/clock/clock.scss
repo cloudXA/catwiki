@@ -1,0 +1,46 @@
+
+.clockContainer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 50%;
+
+    .needle {
+        background-color: var(--primary-color);
+        width: 3px;
+        height: 65px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: bottom center;
+        transform: translate(-50%, -100%);
+
+    }
+    .center-pointer {
+        background-color: #e74c3c;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .miniter {
+        height: 100px;
+        transform: translate(-50%, -100%) rotate(25deg);
+    }
+    .second {
+        height: 100px;
+        background-color: #e74c3c;
+        transform: translate(-50%, -100%) rotate(50deg);
+    }
+    .time-end {
+        position: absolute;
+        bottom: 0;
+        transform: translate(100%, 150%);
+        }
+    
+}

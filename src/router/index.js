@@ -9,6 +9,7 @@ import progressStep from '../pages/progress/progress';
 import mobileTab from '../pages/mobileTab/mobileTab';
 import contentBox from '../pages/content/content';
 import transpic from '../pages/transPic/transPic';
+import clock from '../pages/clock/clock';
 
 
 class RouteConfig extends Component {
@@ -23,6 +24,7 @@ class RouteConfig extends Component {
                     <Route path="/mobileTab" component={mobileTab}></Route>
                     <Route path="/content" component={contentBox}></Route>
                     <Route path="/transpic" component={transpic}></Route>
+                    <Route path="/clock" component={clock}></Route>
                     
                 </Switch>
             </HashRouter>
